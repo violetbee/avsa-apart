@@ -23,12 +23,12 @@ function Index({ apart }: { apart: Apart }) {
     <Layout>
       <div className="container mx-auto mt-3 max-w-[1300px] rounded-md bg-white p-1">
         <div className="flex flex-col justify-between gap-10 rounded-md border-[2px] border-dashed border-black/10 px-14 py-6 md:flex-row">
-          <div className="flex w-1/2 flex-col items-center justify-center">
+          <div className="flex flex-col items-center justify-center lg:w-1/2">
             <div className="relative w-full">
               <img
                 src={apart.images[currentImage]}
                 alt={apart.title}
-                className="h-[400px] w-full  rounded-md object-cover"
+                className="h-[400px] w-full rounded-md object-cover"
               />
               <button
                 onClick={() => setIsFullScreen(!isFullScreen)}

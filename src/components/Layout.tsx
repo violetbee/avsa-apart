@@ -25,13 +25,13 @@ function Layout({ children }: Props) {
         <Menu />
       </header>
       {children}
-      <div className="fixed bottom-4 right-4 space-y-2">
+      <div className="fixed bottom-4 right-4 flex gap-2 md:block md:space-y-2">
         <Link
           href="tel:05366983453"
           target="_blank"
           className="flex h-12 w-36 flex-col items-start justify-end rounded-md bg-[#267D96] pb-2 pl-4 text-lg font-extralight text-white"
         >
-          <div className="flex items-center justify-center gap-1">
+          <div className="flex items-center justify-center  gap-1">
             <FaMobileAlt size={23} /> Şimdi Ara
           </div>
         </Link>

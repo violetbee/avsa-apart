@@ -115,16 +115,35 @@ function Header() {
             </Link>
             <Link
               className="text-4xl font-bold tracking-wider text-[#282828]"
-              href="/hizmetlerimiz"
+              href="/avsa-adasi"
               onClick={() => {
                 setIsMobileMenuOpen(false);
               }}
             >
-              Hizmetlerimiz
+              Avşa Adası
             </Link>
             <Link
               className="text-4xl font-bold tracking-wider text-[#282828]"
-              href="/iletisim"
+              href="/galeri"
+              onClick={() => {
+                setIsMobileMenuOpen(false);
+              }}
+            >
+              Galeri
+            </Link>
+            <Link
+              className="text-4xl font-bold tracking-wider text-[#282828]"
+              href="/nasil-gidilir"
+              onClick={() => {
+                setIsMobileMenuOpen(false);
+              }}
+            >
+              Nasıl Gidilir
+            </Link>
+
+            <Link
+              className="text-4xl font-bold tracking-wider text-[#282828]"
+              href="#"
               onClick={() => {
                 setIsMobileMenuOpen(false);
               }}
