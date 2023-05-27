@@ -79,6 +79,8 @@ export const aparts = [
       "/images/apart-images/apart3/5.jpg",
       "/images/apart-images/apart3/6.jpg",
       "/images/apart-images/apart3/7.jpg",
+      "/images/apart-images/apart3/8.jpg",
+      "/images/apart-images/apart3/9.jpg",
     ],
     capacity: 5,
     size: 50,
