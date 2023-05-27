@@ -7,6 +7,7 @@ import { TiTick } from "react-icons/ti";
 import { AiFillStop } from "react-icons/ai";
 import { FaMapMarkerAlt, FaWhatsapp } from "react-icons/fa";
 import Link from "next/link";
+import { BsPlayCircle } from "react-icons/bs";
 
 function Index({ apart }: { apart: Apart }) {
   const [currentImage, setCurrentImage] = useState(0);
@@ -24,18 +25,36 @@ function Index({ apart }: { apart: Apart }) {
       <div className="container mx-auto mt-3 max-w-[1300px] rounded-md bg-white p-1">
         <div className="flex flex-col justify-between gap-10 rounded-md border-[2px] border-dashed border-black/10 px-14 py-6 md:flex-row">
           <div className="flex flex-col items-center justify-center lg:w-1/2">
-            <div className="relative w-full">
-              <img
-                src={apart.images[currentImage]}
-                alt={apart.title}
-                className="h-[400px] w-full rounded-md object-cover"
-              />
-              <button
-                onClick={() => setIsFullScreen(!isFullScreen)}
-                className="absolute bottom-2 right-2"
-              >
-                <HiMagnifyingGlassPlus className="cursor-pointer text-4xl text-white duration-150 hover:scale-110" />
-              </button>
+            <div className="relative flex w-full justify-center">
+              {currentImage === apart.images.length - 1 ? (
+                <video
+                  src={apart.images[currentImage]}
+                  loop
+                  className="max-h-[400px] min-h-[440px] w-2/3 rounded-md object-cover"
+                />
+              ) : (
+                <img
+                  src={apart.images[currentImage]}
+                  alt={apart.title}
+                  className="h-[400px] w-full rounded-md object-cover"
+                />
+              )}
+
+              {currentImage === apart.images.length - 1 ? (
+                <button
+                  onClick={() => setIsFullScreen(!isFullScreen)}
+                  className="absolute inset-0 flex h-full w-full items-center justify-center "
+                >
+                  <BsPlayCircle className="cursor-pointer text-7xl text-white duration-150 hover:scale-110" />
+                </button>
+              ) : (
+                <button
+                  onClick={() => setIsFullScreen(!isFullScreen)}
+                  className="absolute bottom-2 right-2"
+                >
+                  <HiMagnifyingGlassPlus className="cursor-pointer text-4xl text-white duration-150 hover:scale-110" />
+                </button>
+              )}
             </div>
 
             <div className="relative mt-2">
@@ -58,7 +77,7 @@ function Index({ apart }: { apart: Apart }) {
                 className="relative flex w-full max-w-[600px] items-center justify-between gap-2 overflow-x-hidden scroll-smooth"
               >
                 {apart.images.map((image, index) => {
-                  return (
+                  return image.slice(-3) !== "mp4" ? (
                     <img
                       key={index}
                       className={`h-[100px] w-1/4 cursor-pointer rounded-md object-cover ${
@@ -70,8 +89,21 @@ function Index({ apart }: { apart: Apart }) {
                       alt={apart.title}
                       onClick={() => setCurrentImage(index)}
                     />
+                  ) : (
+                    <video
+                      key={index}
+                      className={`h-[100px] w-1/4 cursor-pointer rounded-md object-cover ${
+                        currentImage === index
+                          ? "border-[2px] border-green-500"
+                          : ""
+                      }`}
+                      onClick={() => setCurrentImage(index)}
+                    >
+                      <source src={image} type="video/mp4" />
+                    </video>
                   );
                 })}
+
                 {/* Display Image full screen on click,  */}
               </div>
               <button className="absolute -right-14 top-1/2 -translate-x-1/2 -translate-y-1/2 transform">
@@ -157,11 +189,21 @@ function Index({ apart }: { apart: Apart }) {
                     <path d="M10 19l-7-7m0 0l7-7m-7 7h18" />
                   </svg>
                 </button>
-                <img
-                  src={apart.images[currentImage]}
-                  alt={apart.title}
-                  className="h-full w-full rounded-md object-cover"
-                />
+                {currentImage === apart.images.length - 1 ? (
+                  <video
+                    className="rounded-xl"
+                    controls
+                    autoPlay
+                    loop
+                    src={apart.images[currentImage]}
+                  />
+                ) : (
+                  <img
+                    src={apart.images[currentImage]}
+                    alt={apart.title}
+                    className="max-h-[900px] w-full rounded-md object-cover"
+                  />
+                )}
                 <button
                   onClick={() => setIsFullScreen(!isFullScreen)}
                   className="absolute right-3 top-3"
