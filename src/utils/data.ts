@@ -99,7 +99,6 @@ export const gallery = [
   "/images/apart-images/apart1/7.jpg",
   "/images/apart-images/apart1/8.jpg",
   "/images/apart-images/apart1/9.jpg",
-  "/images/apart-images/apart1/11.jpg",
   "/images/apart-images/apart2/1.jpg",
   "/images/apart-images/apart2/2.jpg",
   "/images/apart-images/apart2/3.jpg",
