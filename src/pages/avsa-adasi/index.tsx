@@ -10,14 +10,12 @@ function index() {
           <h1 className="text-4xl font-bold">Avşa Adası</h1>
           <div className="flex flex-col gap-5 md:flex-row">
             <p className="text-lg font-medium">
-              Avşa Adası, Marmara Denizi'nin güneydoğusunda, Tekirdağ iline
-              bağlı bir adadır. İstanbul'a 177, Tekirdağ'a ise 52 km uzaklıkta
-              olan Avşa Adası, Marmara Denizi'nin en büyük 4. adasıdır.
-              Yüzölçümü 14,6 km² olan Avşa Adası, 8 km uzunluğunda ve 3 km
-              genişliğindedir. 1996 yılında belediyelik olan Avşa Adası, 2014
-              yılında Tekirdağ Büyükşehir Belediyesi'ne bağlanmıştır. Tekirdağ'a
-              bağlı Marmara Ereğlisi ilçesinin 9 km güneyinde yer alan Avşa
-              Adası, Marmara Denizi'nin en büyük 4. adasıdır.
+              Avşa, Marmara Denizi'nde ada. İstanbul'a deniz otobüsüyle 2,5
+              Erdek'e ise gemiyle 1 saat 50 dakika uzaklıktadır. Balıkesir'in
+              Marmara ilçesine bağlı bir yerleşim yeridir. İlçe merkezine 11 km,
+              il merkezine 155 km uzaklıktadır. Avşa adasının diğer adı
+              "Türkeli" adasıdır. Fakat "Türkeli" ismi "Avşa" olarak
+              değişmiştir.
             </p>
             <img
               src="https://trthaberstatic.cdn.wp.trt.com.tr/resimler/1494000/avsa-adasi-1494682.jpg"
