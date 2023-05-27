@@ -11,12 +11,19 @@ import { BsPlayCircle } from "react-icons/bs";
 
 function Index({ apart }: { apart: Apart }) {
   const [currentImage, setCurrentImage] = useState(0);
+  const [isVideo, setIsVideo] = useState(false);
   const [isFullScreen, setIsFullScreen] = useState(false);
   const scrollRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     if (scrollRef.current) {
       scrollRef.current.scrollLeft = 80 * currentImage;
+    }
+
+    if (apart.images[currentImage]?.includes("mp4")) {
+      setIsVideo(true);
+    } else {
+      setIsVideo(false);
     }
   }, [currentImage]);
 
@@ -26,7 +33,7 @@ function Index({ apart }: { apart: Apart }) {
         <div className="flex flex-col justify-between gap-10 rounded-md border-[2px] border-dashed border-black/10 px-14 py-6 md:flex-row">
           <div className="flex flex-col items-center justify-center lg:w-1/2">
             <div className="relative flex w-full justify-center">
-              {currentImage === apart.images.length - 1 ? (
+              {isVideo ? (
                 <video
                   src={apart.images[currentImage]}
                   loop
@@ -40,7 +47,7 @@ function Index({ apart }: { apart: Apart }) {
                 />
               )}
 
-              {currentImage === apart.images.length - 1 ? (
+              {isVideo ? (
                 <button
                   onClick={() => setIsFullScreen(!isFullScreen)}
                   className="absolute inset-0 flex h-full w-full items-center justify-center "
@@ -77,7 +84,7 @@ function Index({ apart }: { apart: Apart }) {
                 className="relative flex w-full max-w-[600px] items-center justify-between gap-2 overflow-x-hidden scroll-smooth"
               >
                 {apart.images.map((image, index) => {
-                  return image.slice(-3) !== "mp4" ? (
+                  return !image.includes("mp4") ? (
                     <img
                       key={index}
                       className={`h-[100px] w-1/4 cursor-pointer rounded-md object-cover ${
@@ -103,8 +110,6 @@ function Index({ apart }: { apart: Apart }) {
                     </video>
                   );
                 })}
-
-                {/* Display Image full screen on click,  */}
               </div>
               <button className="absolute -right-14 top-1/2 -translate-x-1/2 -translate-y-1/2 transform">
                 <svg
@@ -189,7 +194,7 @@ function Index({ apart }: { apart: Apart }) {
                     <path d="M10 19l-7-7m0 0l7-7m-7 7h18" />
                   </svg>
                 </button>
-                {currentImage === apart.images.length - 1 ? (
+                {isVideo ? (
                   <video
                     className="rounded-xl"
                     controls
@@ -249,16 +254,16 @@ export default Index;
 
 export const getStaticProps: GetStaticProps = (context) => {
   const slug = context.params?.slug;
-  const isValid = aparts.find((apart) => apart.slug === slug);
+  const apartsIsValid = aparts.find((apart) => apart.slug === slug);
 
-  if (!isValid) {
+  if (!apartsIsValid) {
     return {
       notFound: true,
     };
   } else {
     return {
       props: {
-        apart: aparts.find((apart) => apart.slug === slug),
+        apart: apartsIsValid,
       },
     };
   }
