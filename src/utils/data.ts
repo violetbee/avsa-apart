@@ -3,7 +3,7 @@ export const aparts = [
     id: 1,
     title: "Daire 1",
     description:
-      "Dairelerimizde sizlerin rahatı için her şeyi düşündük. Evinizin konforunu aratmayacak bir tatil için tv, sıcak su ve her türlü mutfak araç gereci sizlerin hizmetine sunulmuştur. Avşa merkezde bulunan dairelerimiz Avşa İDO iskelesine 75 metre mesafededir. Ailenizle ve sevdiklerinizle güvenli, konforlu ve ekonomik bir tatil geçirmek için Avşa Mahir apart tüm sezon boyunca hizmetinizdedir.",
+      "Dairelerimizde sizlerin rahatı için her şeyi düşündük. Evinizin konforunu aratmayacak bir tatil için tv, sıcak su ve her türlü mutfak araç gereci sizlerin hizmetine sunulmuştur. Avşa merkezde bulunan dairelerimiz Avşa İDO iskelesine 75 metre mesafededir. Ailenizle ve sevdiklerinizle güvenli, konforlu, hijyenik ve ekonomik bir tatil geçirmek için Avşa Mahir apart tüm sezon boyunca hizmetinizdedir.",
     features: [
       "Uydu Yayını",
       "24 Saat Sıcak Su",
@@ -33,7 +33,7 @@ export const aparts = [
     id: 2,
     title: "Daire 2",
     description:
-      "Dairelerimizde sizlerin rahatı için her şeyi düşündük. Evinizin konforunu aratmayacak bir tatil için tv, sıcak su ve her türlü mutfak araç gereci sizlerin hizmetine sunulmuştur. Avşa merkezde bulunan dairelerimiz Avşa İDO iskelesine 75 metre mesafededir. Ailenizle ve sevdiklerinizle güvenli, konforlu ve ekonomik bir tatil geçirmek için Avşa Mahir apart tüm sezon boyunca hizmetinizdedir.",
+      "Dairelerimizde sizlerin rahatı için her şeyi düşündük. Evinizin konforunu aratmayacak bir tatil için tv, sıcak su ve her türlü mutfak araç gereci sizlerin hizmetine sunulmuştur. Avşa merkezde bulunan dairelerimiz Avşa İDO iskelesine 75 metre mesafededir. Ailenizle ve sevdiklerinizle güvenli, konforlu, hijyenik ve ekonomik bir tatil geçirmek için Avşa Mahir apart tüm sezon boyunca hizmetinizdedir.",
     features: [
       "Uydu Yayını",
       "24 Saat Sıcak Su",
@@ -62,7 +62,7 @@ export const aparts = [
     id: 3,
     title: "Daire 3",
     description:
-      "Dairelerimizde sizlerin rahatı için her şeyi düşündük. Evinizin konforunu aratmayacak bir tatil için tv, sıcak su ve her türlü mutfak araç gereci sizlerin hizmetine sunulmuştur. Avşa merkezde bulunan dairelerimiz Avşa İDO iskelesine 75 metre mesafededir. Ailenizle ve sevdiklerinizle güvenli, konforlu ve ekonomik bir tatil geçirmek için Avşa Mahir apart tüm sezon boyunca hizmetinizdedir.",
+      "Dairelerimizde sizlerin rahatı için her şeyi düşündük. Evinizin konforunu aratmayacak bir tatil için tv, sıcak su ve her türlü mutfak araç gereci sizlerin hizmetine sunulmuştur. Avşa merkezde bulunan dairelerimiz Avşa İDO iskelesine 75 metre mesafededir. Ailenizle ve sevdiklerinizle güvenli, konforlu, hijyenik ve ekonomik bir tatil geçirmek için Avşa Mahir apart tüm sezon boyunca hizmetinizdedir.",
 
     features: [
       "Uydu Yayını",
