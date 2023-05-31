@@ -28,12 +28,13 @@ function Index() {
           content="avşa adası, avşa, avşa mahir apart, avşa apart, avşa pansiyon, avşa adası apart, avşa adası pansiyon, avşa adası mahir apart, avşa adası mahir pansiyon, avşa adası mahir, tatil, kiralık, apart, avşa kiralık apart, yazlık, sezonluk"
         />
         <meta name="robots" content="index, follow" />
-        <meta name="language" content="Turkish" />
         <meta name="author" content="Mahir Apart" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://mahirapart.com/" />
         <meta property="og:title" content="Mahir Apart - Avşa Adası" />
+        <meta
+          property="og:description"
+          content="Avşa Adası'nda bulunan Mahir Apart, denize 50 metre mesafede, 1+1 daireleri ile sizlere hizmet vermektedir."
+        />
       </Head>
 
       <Layout>
