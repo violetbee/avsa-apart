@@ -285,7 +285,10 @@ export const getStaticProps: GetStaticProps = (context) => {
 
   if (!apartsIsValid) {
     return {
-      notFound: true,
+      redirect: {
+        destination: "/",
+        permanent: false,
+      },
     };
   } else {
     return {
