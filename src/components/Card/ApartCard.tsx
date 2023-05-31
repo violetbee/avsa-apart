@@ -16,18 +16,18 @@ function ApartCard(item: Apart) {
         <h2 className="text-3xl font-medium tracking-wide text-[#21A179]">
           {item.title}
         </h2>
-        <p className="max-w-[306px] break-all text-center text-gray-500">
-          {item.description.split(" ").splice(0, 25).join(" ")}
+        <p className="max-w-[306px] break-words text-center text-gray-500">
+          {item.description}
         </p>
         {item.features.map((feature, idx) => (
           <div key={idx} className="flex items-center justify-center gap-1">
             <p className="text-[#21A179]">{feature}</p>
             <TiTick className="text-[#21A179]" />
             {feature === "Denize Yakın" && (
-              <span className="text-sm text-gray-600">20 Metre</span>
+              <span className="text-sm text-gray-600">50 Metre</span>
             )}
             {feature === "İDO İskelesine Yakın" && (
-              <span className="text-sm text-gray-600">50 Metre</span>
+              <span className="text-sm text-gray-600">75 Metre</span>
             )}
           </div>
         ))}
