@@ -31,8 +31,7 @@ function Index({ apart }: { apart: Apart }) {
   return (
     <>
       <Head>
-        <title>{apart.title} - Mahir Apart</title>
-        <meta name="title" content="Mahir Apart - Avşa Adası" />
+        <title>{apart.title + " - " + "Mahir Apart"}</title>
         <meta
           name="description"
           content="Avşa Adası'nda bulunan Mahir Apart, denize 50 metre mesafede, 1+1 daireleri ile sizlere hizmet vermektedir."
@@ -290,13 +289,13 @@ export const getStaticProps: GetStaticProps = (context) => {
         permanent: false,
       },
     };
-  } else {
-    return {
-      props: {
-        apart: apartsIsValid,
-      },
-    };
   }
+
+  return {
+    props: {
+      apart: apartsIsValid,
+    },
+  };
 };
 
 export const getStaticPaths = () => {
@@ -318,6 +317,6 @@ export const getStaticPaths = () => {
         },
       },
     ],
-    fallback: false,
+    fallback: "blocking",
   };
 };

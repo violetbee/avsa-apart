@@ -7,7 +7,6 @@ function index() {
     <>
       <Head>
         <title>Avşa Adası hakkında - Mahir Apart</title>
-        <meta name="title" content="Mahir Apart - Avşa Adası" />
         <meta
           name="description"
           content="Avşa Adası'nda bulunan Mahir Apart, denize 50 metre mesafede, 1+1 daireleri ile sizlere hizmet vermektedir."
@@ -17,13 +16,6 @@ function index() {
           content="avşa adası, avşa, avşa mahir apart, avşa apart, avşa pansiyon, avşa adası apart, avşa adası pansiyon, avşa adası mahir apart, avşa adası mahir pansiyon, avşa adası mahir, tatil, kiralık, apart, avşa kiralık apart, yazlık, sezonluk"
         />
         <meta name="robots" content="index, follow" />
-        <meta name="author" content="Mahir Apart" />
-        <meta property="og:type" content="website" />
-        <meta property="og:title" content="Mahir Apart - Avşa Adası" />
-        <meta
-          property="og:description"
-          content="Avşa Adası'nda bulunan Mahir Apart, denize 50 metre mesafede, 1+1 daireleri ile sizlere hizmet vermektedir."
-        />
       </Head>
       <Layout>
         <div className="container mx-auto mt-3 max-w-[1300px] rounded-md bg-white p-1">

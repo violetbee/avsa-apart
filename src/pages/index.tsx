@@ -12,7 +12,7 @@ const Home: NextPage = () => {
     <>
       <Head>
         <title>Mahir Apart - Avşa Adası</title>
-        <meta name="title" content="Mahir Apart - Avşa Adası" />
+
         <meta
           name="description"
           content="Avşa Adası'nda bulunan Mahir Apart, denize 50 metre mesafede, 1+1 daireleri ile sizlere hizmet vermektedir."
@@ -23,12 +23,6 @@ const Home: NextPage = () => {
         />
         <meta name="robots" content="index, follow" />
         <meta name="author" content="Mahir Apart" />
-        <meta property="og:type" content="website" />
-        <meta property="og:title" content="Mahir Apart - Avşa Adası" />
-        <meta
-          property="og:description"
-          content="Avşa Adası'nda bulunan Mahir Apart, denize 50 metre mesafede, 1+1 daireleri ile sizlere hizmet vermektedir."
-        />
       </Head>
       <Layout>
         <Hero />

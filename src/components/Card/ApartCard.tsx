@@ -47,7 +47,7 @@ function ApartCard(item: Apart) {
         </p>
       </div>
       <Link
-        href={item.slug}
+        href={"/apartlar/" + item.slug}
         className="w-full rounded-b-md bg-[#21A179] py-2 text-center text-lg font-medium tracking-wide text-white"
       >
         İncele
