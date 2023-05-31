@@ -7,7 +7,7 @@ export const aparts = [
     features: [
       "Uydu Yayını",
       "24 Saat Sıcak Su",
-      "Deniz Manzaralı",
+      "Denize Yakın",
       "İDO İskelesine Yakın",
     ],
     coverImage: "/images/apart-images/apart1/10.jpg",
@@ -37,7 +37,7 @@ export const aparts = [
     features: [
       "Uydu Yayını",
       "24 Saat Sıcak Su",
-      "Deniz Manzaralı",
+      "Denize Yakın",
       "İDO İskelesine Yakın",
     ],
     coverImage: "/images/apart-images/apart2/1.jpg",
@@ -67,7 +67,7 @@ export const aparts = [
     features: [
       "Uydu Yayını",
       "24 Saat Sıcak Su",
-      "Deniz Manzaralı",
+      "Denize Yakın",
       "İDO İskelesine Yakın",
     ],
     coverImage: "/images/apart-images/apart3/8.jpg",
