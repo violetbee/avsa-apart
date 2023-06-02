@@ -40,9 +40,10 @@ export const aparts = [
       'Denize Yakın',
       'İDO İskelesine Yakın',
     ],
-    coverImage: 'https://r.resimlink.com/rm4KwzNCB.jpg',
+    coverImage:
+      'https://r.resimlink.com/rm4KwzNCB.jpg?v=a2b5a4589c3d23790e492bb855d56158',
     images: [
-      'https://r.resimlink.com/rm4KwzNCB.jpg',
+      'https://r.resimlink.com/rm4KwzNCB.jpg?v=a2b5a4589c3d23790e492bb855d56158',
       'https://r.resimlink.com/Bikw529GqaA.jpg',
       'https://r.resimlink.com/eJ_zFZ9Pij4.jpg',
       'https://r.resimlink.com/V96INq5.jpg',
