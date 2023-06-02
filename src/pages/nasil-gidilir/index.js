@@ -20,7 +20,7 @@ function index() {
       <Layout>
         <div className='container mx-auto mt-3 max-w-[1300px] rounded-md bg-white p-1'>
           {/* Nasil Gidilir Sayfası, İçerisinde iframe olarak apart'ın konumunu göstereceğim. */}
-          <div className='flex flex-col gap-5 rounded-md border-[2px] border-dashed border-black/10 px-10 py-6 md:justify-between'>
+          <div className='flex flex-col gap-5 rounded-md border-[2px] border-dashed border-black/10 text-zinc-900 px-10 py-6 md:justify-between'>
             <h1 className='text-4xl font-bold'>Nasıl Gidilir?</h1>
             <div className='flex flex-col gap-5'>
               <p className='text-lg font-medium'>

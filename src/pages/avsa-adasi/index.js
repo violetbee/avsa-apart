@@ -20,7 +20,7 @@ function index() {
       <Layout>
         <div className='container mx-auto mt-3 max-w-[1300px] rounded-md bg-white p-1'>
           {/* Avşa Adasının Tanıtım Sayfası */}
-          <div className='flex flex-col gap-5 rounded-md border-[2px] border-dashed border-black/10 px-10 py-6 md:justify-between'>
+          <div className='flex flex-col gap-5 rounded-md border-[2px] border-dashed text-zinc-900 border-black/10 px-10 py-6 md:justify-between'>
             <h1 className='text-4xl font-bold'>Avşa Adası</h1>
             <div className='flex flex-col gap-5 md:flex-row'>
               <p className='text-lg font-medium'>
