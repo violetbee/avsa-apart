@@ -56,7 +56,7 @@ function Index() {
                 <input
                   type='email'
                   className='border border-gray-300 rounded-md p-2 focus:outline-none focus:ring-2 focus:ring-[#031926]'
-                  placeholder='ornek@mail.com'
+                  placeholder='Gönderici mail örnek: ornek@mail.com'
                   value={senderMail}
                   onChange={(e) => setSenderMail(e.target.value)}
                 />
