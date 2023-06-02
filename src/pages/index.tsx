@@ -1,6 +1,5 @@
 import { type NextPage } from "next";
 import Head from "next/head";
-
 import Hero from "@/components/Sections/Hero";
 import ApartCard from "@/components/Card/ApartCard";
 import Layout from "@/components/Layout";
