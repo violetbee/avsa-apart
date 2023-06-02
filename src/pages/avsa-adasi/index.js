@@ -32,7 +32,7 @@ function index() {
                 değişmiştir.
               </p>
               <img
-                src='https://trthaberstatic.cdn.wp.trt.com.tr/resimler/1494000/avsa-adasi-1494682.jpg'
+                src='/images/avsa-havadan.jpg'
                 alt='Avşa Adası'
                 className='h-[500px] w-[500px] rounded-md object-cover'
               />
