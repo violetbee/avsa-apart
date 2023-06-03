@@ -147,7 +147,7 @@ function Header() {
 
             <Link
               className='text-4xl font-bold tracking-wider text-[#282828]'
-              href='#'
+              href='/iletisim'
               onClick={() => {
                 setIsMobileMenuOpen(false);
               }}
