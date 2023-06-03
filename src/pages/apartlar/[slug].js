@@ -63,7 +63,7 @@ function Index({ apart }) {
                   <img
                     src={apart.images[currentImage]}
                     alt={apart.title}
-                    className='h-[350px] w-full rounded-md object-cover'
+                    className=' w-full rounded-md object-cover'
                   />
                 )}
 
@@ -89,9 +89,9 @@ function Index({ apart }) {
                   className={`absolute z-10 left-8 p-4 bg-white rounded-full top-1/2 -translate-x-1/2 -translate-y-1/2 transform ${
                     currentImage === 0 ? 'hidden' : ''
                   }`}
+                  onClick={() => setCurrentImage(currentImage - 1)}
                 >
                   <svg
-                    onClick={() => setCurrentImage(currentImage - 1)}
                     xmlns='http://www.w3.org/2000/svg'
                     className={`h-8 w-8 cursor-pointer text-gray-500 hover:text-gray-900 `}
                     fill='none'
@@ -137,9 +137,9 @@ function Index({ apart }) {
                   className={`absolute z-10 -right-8 p-4 bg-white rounded-full top-1/2 -translate-x-1/2 -translate-y-1/2 transform ${
                     currentImage === apart.images.length - 1 ? 'hidden' : ''
                   }`}
+                  onClick={() => setCurrentImage(currentImage + 1)}
                 >
                   <svg
-                    onClick={() => setCurrentImage(currentImage + 1)}
                     xmlns='http://www.w3.org/2000/svg'
                     className={`h-8 w-8 cursor-pointer text-gray-500 hover:text-gray-900 `}
                     fill='none'
