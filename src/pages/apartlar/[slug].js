@@ -50,7 +50,7 @@ function Index({ apart }) {
       </Head>
       <Layout>
         <div className='container mx-auto mt-3 max-w-[1300px] rounded-md bg-white p-1'>
-          <div className='flex flex-col justify-between gap-10 rounded-md border-[2px] border-dashed border-black/10 px-14 py-6 md:flex-row'>
+          <div className='flex flex-col justify-between gap-10 rounded-md border-[2px] border-dashed border-black/10 px-3 md:px-14 py-6 md:flex-row'>
             <div className='flex flex-col items-center justify-center lg:w-1/2'>
               <div className='relative flex w-full justify-center'>
                 {isVideo ? (
@@ -63,7 +63,7 @@ function Index({ apart }) {
                   <img
                     src={apart.images[currentImage]}
                     alt={apart.title}
-                    className='h-[400px] w-full rounded-md object-cover'
+                    className='h-[350px] w-full rounded-md object-cover'
                   />
                 )}
 
@@ -85,13 +85,15 @@ function Index({ apart }) {
               </div>
 
               <div className='relative mt-2'>
-                <button className='absolute -left-6 top-1/2 -translate-x-1/2 -translate-y-1/2 transform'>
+                <button
+                  className={`absolute z-10 left-8 p-4 bg-white rounded-full top-1/2 -translate-x-1/2 -translate-y-1/2 transform ${
+                    currentImage === 0 ? 'hidden' : ''
+                  }`}
+                >
                   <svg
                     onClick={() => setCurrentImage(currentImage - 1)}
                     xmlns='http://www.w3.org/2000/svg'
-                    className={`h-8 w-8 cursor-pointer text-gray-500 hover:text-gray-900 ${
-                      currentImage === 0 ? 'hidden' : ''
-                    }`}
+                    className={`h-8 w-8 cursor-pointer text-gray-500 hover:text-gray-900 `}
                     fill='none'
                     viewBox='0 0 24 24'
                     stroke='currentColor'
@@ -131,13 +133,15 @@ function Index({ apart }) {
                     );
                   })}
                 </div>
-                <button className='absolute -right-14 top-1/2 -translate-x-1/2 -translate-y-1/2 transform'>
+                <button
+                  className={`absolute z-10 -right-8 p-4 bg-white rounded-full top-1/2 -translate-x-1/2 -translate-y-1/2 transform ${
+                    currentImage === apart.images.length - 1 ? 'hidden' : ''
+                  }`}
+                >
                   <svg
                     onClick={() => setCurrentImage(currentImage + 1)}
                     xmlns='http://www.w3.org/2000/svg'
-                    className={`h-8 w-8 cursor-pointer text-gray-500 hover:text-gray-900 ${
-                      currentImage === apart.images.length - 1 ? 'hidden' : ''
-                    }`}
+                    className={`h-8 w-8 cursor-pointer text-gray-500 hover:text-gray-900 `}
                     fill='none'
                     viewBox='0 0 24 24'
                     stroke='currentColor'
