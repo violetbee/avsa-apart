@@ -14,7 +14,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         </Script>
       </Head>
       <body>
-        <Script id='google-analytics-no-script' strategy='lazyLoad'>
+        <Script id='google-analytics-no-script' strategy='lazyOnLoad'>
           <iframe
             src='https://www.googletagmanager.com/ns.html?id=GTM-P8QSXXD'
             height='0'
