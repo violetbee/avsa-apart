@@ -21,7 +21,7 @@ function Index() {
               {/* Phone */}
               <h1 className='text-4xl font-bold'>Telefon</h1>
               <p className='text-lg font-medium'>
-                <a href='tel:+905323456789'>+90 (536) 698 34 53</a>
+                <a href='tel:+905366983453'>+90 (536) 698 34 53</a>
               </p>
             </div>
             {/* Form area */}
