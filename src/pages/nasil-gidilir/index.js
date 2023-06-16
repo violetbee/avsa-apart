@@ -8,7 +8,7 @@ function index() {
         <title>Nasıl Gidilir? - Mahir Apart</title>
         <meta
           name='description'
-          content="Avşa Adası'nda bulunan Mahir Apart, denize 50 metre mesafede, 1+1 daireleri ile sizlere hizmet vermektedir."
+          content="Avşa Adası'nda bulunan Mahir Apart, denize 40 metre mesafede, 1+1 daireleri ile sizlere hizmet vermektedir."
         />
         <meta
           name='keywords'
