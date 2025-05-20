@@ -23,7 +23,7 @@ const Home = () => {
         <meta name='author' content='Mahir Apart' />
       </Head>
       <Layout>
-        <Hero />
+        {/* <Hero /> */}
         <div className='bg-white block md:hidden'>
           <p
             className='
@@ -35,7 +35,7 @@ const Home = () => {
             py-4 px-3
         '
           >
-            Daire Seçeneklerimiz İçin Aşağı Kaydırın
+            Daire Seçeneklerimiz İçin Yukarı Kaydırın
             <svg
               xmlns='http://www.w3.org/2000/svg'
               className='h-6 w-6 inline-block ml-1 
