@@ -63,7 +63,7 @@ function Index({ apart }) {
                   <img
                     src={apart.images[currentImage]}
                     alt={apart.title}
-                    className=" w-full rounded-md object-cover max-h-[450px] min-h-[450px]"
+                    className=" w-full rounded-md object-contain max-h-[450px] min-h-[450px]"
                   />
                 )}
 
@@ -77,10 +77,8 @@ function Index({ apart }) {
                 ) : (
                   <button
                     onClick={() => setIsFullScreen(!isFullScreen)}
-                    className="absolute bottom-2 right-2"
-                  >
-                    <HiMagnifyingGlassPlus className="cursor-pointer text-4xl text-white duration-150 hover:scale-110" />
-                  </button>
+                    className="absolute inset-0"
+                  />
                 )}
               </div>
 
